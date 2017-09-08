@@ -3,6 +3,6 @@ Wrote my resume in LaTeX
 
 Can be compiled using 
 
-'''shell
+```shell
 $ xetex cv-shubh.tex
-'''
+```
