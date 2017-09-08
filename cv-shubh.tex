@@ -1,0 +1,102 @@
+% !TeX program = xelatex
+% Run with XeLaTeX
+
+\documentclass[changecolor={111, 156, 45}]{cv-shubh}
+% Available options for cv-shubh documentclass: 
+% ---------------------------------------------
+%     - changecolor = {R, G, B} 
+%       Changes the color of the header bar and the titles. 
+%       It expects a RGB color code where RGB go from 0-255.
+ 
+\begin{document}
+\pagestyle{empty} %to remove the page numbers
+
+% This is the header on the first page. It contains your name and contact
+% details. 
+% \sep inserts a | between items. 
+% You can use FontAwesome icons and use \FAspace after a font awesome icon to
+% insert a predefined horizontal space after a font awesome icon icon.
+\header{shubh}{gupta}{%
+  \faMapMarker \hspace{\FAspace} IIT Kanpur \sep Kanpur \sep India}{%
+  \faMobile \hspace{\FAspace} +91 7318019018 \sep% 
+  \faEnvelope \hspace{\FAspace} shubhg@iitk.ac.in \sep% 
+  \faLinkedinSquare \hspace{\FAspace}https://www.linkedin.com/in/shubh-gupta/%
+  }
+
+% Add a picture to the top right of the page. Comment or delete if you do not 
+% want a picture
+\photo{Resume}
+
+\textit{A sophomore at IIT Kanpur, extending boundaries.}
+
+\section*{education}
+% Use tabularcv environment to make a two column environment. The left column 
+% is for the dates, the right one is for details of your education for example. 
+% You can use the command \worktitle{Study name/Job title}{Location}.
+% You can use the environment tabitemize to make a bulletpoint list inside the
+% tabularcv environment.
+\begin{tabularcv}
+2016-Pres   &   \worktitle{B.Tech in Chemical Engineering}{IIT Kanpur}
+                    \newline Currently have a CPI of 6.8
+                    \\
+2014-2016      &   \worktitle{High School}{Modern Vidya Niketan, Aravali Hills}
+                    \newline Scored 94.8\% in class 10 CBSE Board
+                    \\
+2002-2014      &   \worktitle{Elementary School}{Modern Vidya Niketan, Aravali Hills}
+                    \newline Scored a 9.6 CGPA in class 10 CBSE Board
+\end{tabularcv}
+
+\section*{work}
+\begin{tabularcv}
+Jul'17-Pres   &   \worktitle{Senior Executive}{Techkriti, Web}
+                \newline Programming in Node.js, Express
+                    \begin{tabitemize}
+                        \item Techkriti is the annual Tech-fest of IIT Kanpur
+                        \item Team Web is in charge of mantaining the fest's website.
+                        \item Currently working on improving the backend code.
+                    \end{tabitemize}
+                \\
+Jul'17-Pres   &   \worktitle{Full Stack Developer}{NYC Office, IITK}
+                \newline Volunteering for improving the web application ahead.
+                \\
+Summer'17   &   \worktitle{Backend Developer}{NYC Office, IITK}
+                \newline Programming in Scala, Akka
+                \begin{tabitemize}
+                    \item Understanding a huge codebase which has already been worked upon by others Gained an insight into understanding somebody else’s code.
+                    \item Collaborative programming on a project This gave an insight into steps that should be taken to reduce code redundancy, maintain uniformity in code and working with git.
+                    \item Understood Functional Programming Paradigm Also completed the “Functional Programming Principles in Scala” course on Coursera by Martin Odersky - the creator of Scala
+                    \item Creating RESTful API endpoints.
+                \end{tabitemize}
+\end{tabularcv}   
+
+\section*{positions of respect}
+\begin{tabularcv}
+Aug'17-Pres         &   \worktitle{Senior Executive}{Startup Internship Placement program, E-Cell IIT Kanpur}
+                        \newline  To develop IIT Kanpur as India’s hub of Next Generation innovators, entrepreneurs and change makers and amalgamate IIT Kanpur’s leadership in innovation with its strong intellectual resources to bring out country’s frontier entrepreneurial leader.
+                        \\
+July'17-Pres        &   \worktitle{Senior Election Officer}{Election Commission, IIT Kanpur} 
+                        \newline In charge of the smooth conduction of general and by-elections at IIT Kanpur
+                        \\
+July'17-Pres        &   \worktitle{Senior Executive}{Techkriti, Web}
+                        \newline Helping in improving the backend code for the college's annual tech-fest website.
+\end{tabularcv}
+
+\section*{software skills}
+\begin{tabularcv}
+Languages       &    Scala, Node.js, Python, Rust, Java.
+                    \\
+Frameworks      &   Akka(Scala), Express(Node.js), Django(Python)(Beg), Flask(Python)(Beg)
+                    \\
+Softwares       &   Android Studio, AutoCad, Adobe Photoshop(Beg).
+                    \\
+Operating       &   systems Windows, Ubuntu, CentOS, Debian, Arch Linux.
+\end{tabularcv}
+\section*{languages}
+\begin{tabularcv}
+Hindi       &		Mother tongue \\
+English     &  	Excellent   
+\end{tabularcv}
+\section*{interests}
+Open sourcing, Development, Dancing, Singing, Photography, Entrepreneurship
+
+\end{document}
