@@ -1,5 +1,5 @@
-# Resume
-Wrote my resume in LaTeX
+# CV in LaTeX
+Uses the CV Template for XeLaTeX
 
 Can be compiled using 
 
