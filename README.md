@@ -6,3 +6,4 @@ Can be compiled using
 ```shell
 $ xetex texShubh.tex
 ```
+[Preview of the Resume](/texShubh.pdf)
